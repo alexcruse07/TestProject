@@ -24,12 +24,9 @@ public class Test1 {
 
 	public static void main(String[] args) throws IOException, InterruptedException, ParseException {
 
-		/*for (int i = 0; i < 100; i++) {
-			Thread.sleep(1000);
-			sendGET();
-			System.out.println("GET DONE");
-		}*/
+		
 		System.out.println(ZonedDateTime.now(ZoneId.of("Asia/Singapore")).toString());
+		System.out.println("Test");
 		String clientTime = "2017-07-14T13:26:28.582+03:00[Asia/Istanbul]";
 		String lv_dateFormateInUTC="";
 		Date date = Date.from(ZonedDateTime.parse(clientTime).toInstant());
